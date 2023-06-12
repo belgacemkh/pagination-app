@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Student;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +14,5 @@ use App\Models\Student;
 */
 
 Route::get('/', function () {
-    return view('welcome', ['students' => Student::paginate(10)]);
+    return view('welcome');
 });
